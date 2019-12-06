@@ -13,3 +13,7 @@ Obs.: O complemento "--api-only" diz que será somente uma api sem interface vie
 6. Criando controller: adonis make:controller [Nome do Controller]
 
 7. Usado o Insominia para testar a API.
+
+8. Criando model + migration(-m) + Controller(-c): adonis make:model Tweet -m -c  
+
+9. Listar as rotas: adonis route:list 
