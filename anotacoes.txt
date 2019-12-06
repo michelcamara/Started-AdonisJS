@@ -1,0 +1,15 @@
+1. Instalando Adonis: npm install --global @adonisjs/cli
+
+2. Criando o projeto: adonis new `NomeDoProjeto` --api-only
+Obs.: O complemento "--api-only" diz que será somente uma api sem interface view.
+
+3. Iniciando o servidor do adonis: adonis serve --dev
+
+4. Intalado a dependencia postgreSQL: npm install pg 
+  4.1. Usado o software Postico para Mac.
+
+5. Criando as migrations(tabelas) no banco de dados: adonis migration:run
+
+6. Criando controller: adonis make:controller [Nome do Controller]
+
+7. Usado o Insominia para testar a API.
