@@ -8,14 +8,14 @@ class TweetSchema extends Schema {
     this.create("tweets", table => {
       table.increments();
       table
-        .integer("user_id")
+        .integer('user_id')
         .unsigned()
         .notNullable()
-        .references("id")
-        .inTable("users")
-        .onUpdate("CASCADE")
-        .onDelete("CASCADE");
-      table.string("content", 240).notNullable();
+        .references('id')
+        .inTable('users')
+        .onUpdate('CASCADE')
+        .onDelete('CASCADE');
+      table.string('content', 240).notNullable();
       table.timestamps();
     });
   }

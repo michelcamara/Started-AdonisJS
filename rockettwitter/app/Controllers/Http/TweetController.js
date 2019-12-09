@@ -1,6 +1,6 @@
 'use strict';
 
-const Tweet = use("App/Models/Tweet");
+const Tweet = use('App/Models/Tweet');
 
 /** @typedef {import('@adonisjs/framework/src/Request')} Request */
 /** @typedef {import('@adonisjs/framework/src/Response')} Response */
@@ -39,7 +39,7 @@ class TweetController {
    */
   async store ({ request, auth }) {
     const data = request.only(['content']);
-    const tweet = await Tweet.create({user_id: auth.userid, ...data});
+    const tweet = await Tweet.create({user_id: auth.user.id, ...data});
 
     return tweet;
   }
